@@ -30,6 +30,49 @@ color: black;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  height: 176px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
+  width: 256px;
+  background: url('') center / cover;
+}
+#local .demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('../images/localsounds.png') center / cover;
+}
+.demo-card-image.mdl-card{
+  width:55%;
+  margin:0 auto;
+}
+#gnosh .demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('../images/gnosh.png') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fade.ng-hide {
+  transition:0.5s linear all;
+  opacity:0;
+}
+#hiddenContainer{
+  display:flex;
+
+  /*align-items: center;*/
+}
+#siteContainer{
+  height:800px;
+
+  margin: 0 auto;
+  overflow: scroll;
+}
+#resume{
+  margin:0 auto;
 }
