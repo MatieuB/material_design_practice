@@ -138,12 +138,29 @@ h2{
 .mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect {
 
   width:90%;
-  height:135%;
+  height:100%;
   background-color: rgb(204, 128, 28);
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+.btnFont{
+  font-family: monospace;
 }
 i.material-icons{
-  font-size: 50px;
+  font-size: 60px;
   color:rgb(149, 48, 26);
-
+}
+#tree{
+  width:45%;
+}
+#footer{
+  height:111%;
+  /*width:100%;*/
+  /*background: no-repeat;*/
+  background-color: rgba(255, 255, 255, 0);
+  background-image:url('../images/dinosaur.jpg');
+  /*background:*/
+}
+.mdl-card__title.mdl-card--expand{
+  background-color: rgb(149, 48, 26);
 }
