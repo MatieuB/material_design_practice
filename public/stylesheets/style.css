@@ -4,26 +4,26 @@ body {
 }
 
 
-/*a > .mdl-navigation{
+.mdl-navigation__link{
   color:black;
-}*/
-
-.mdl_navigation__link {
-  color: black;
+  font-size: 24px;
+  width:100%;
 }
 
+
 .demo-layout-transparent {
-
-background-color: rgba(124, 123, 28, 0.4);
-/*background: url('./images/tree.png')*/
-
+  background-color: rgba(124, 123, 28, 0.4);
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
-/* This background is dark, so we set text to white. Use 87% black instead if
-   your background is light. */
-color: black;
+  /* This background is dark, so we set text to white. Use 87% black instead if
+  your background is light. */
 
+  color: black;
+
+}
+.mdl-layout__drawer{
+  font-size: 30px;
 }
 .demo-card-wide.mdl-card {
   width: 512px;
@@ -69,10 +69,81 @@ color: black;
 }
 #siteContainer{
   height:800px;
-
+  /*width:50%;
+  background-color: rgba(218, 214, 227, 0.47);*/
   margin: 0 auto;
   overflow: scroll;
 }
-#resume{
+#resume {
   margin:0 auto;
+}
+#about{
+  border-radius: 5%;
+  margin:0 auto;
+  width:80%;
+  background-color: rgba(90, 110, 140, 0.4);
+  height: 800px;
+  overflow: scroll;
+  color:white;
+}
+.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect{
+
+}
+.material-icons{
+  font-size: 28px;
+}
+#buttonContainer{
+  display:flex;
+  margin-top:7%;
+  margin-bottom: 7%;
+  /*align-content:space-around;*/
+  justify-content: space-between;
+  /*flex-direction: column;*/
+}
+main{
+  display: flex;
+  position: relative;
+}
+#me{
+  width:25%;
+  border-radius: 3%;
+  border: 5px solid grey;
+}
+.iconContainer{
+  margin: 30px auto;
+  width:95%;
+  align-content: space-between;
+  justify-content: center;
+  display:inline-flex;
+}
+.mdl-layout__drawer{
+  /*display: inline-flex;
+  align-self: center;*/
+  font-size: 36px;
+  display:flex;
+  align-content: space-between;
+}
+.mdl-layout__drawer-button.material-icons{
+  font-size: 36px;
+}
+#title{
+  width:100%;
+}
+h2{
+  margin-top: 5%;
+  /*margin-right: 0px;*/
+  font-family: monospace;
+  font-size: 60px;
+}
+.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect {
+
+  width:90%;
+  height:135%;
+  background-color: rgb(204, 128, 28);
+  padding-bottom: 30px;
+}
+i.material-icons{
+  font-size: 50px;
+  color:rgb(149, 48, 26);
+
 }

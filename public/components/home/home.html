@@ -1,29 +1,36 @@
-<div class="text-center">
+<div class="text-center" id="buttonContainer">
   <main  class="mdl-layout__content mdl-cell mdl-cell--12-col">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--4-col">
-        <button ng-click="show1()"class=" mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-          <i class="material-icons">folder</i>
+        <button ng-click="show1()"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          <h4>PROJECTS</h4>
+          <div>
+            <i class="material-icons">folder</i>
+          </div>
         </button>
-        <h6>Projects</h6>
+
+
       </div>
       <div class="mdl-cell mdl-cell--4-col">
-        <button ng-click="show2()"class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-          <i class="material-icons">fingerprint</i>
-        </button>
-        <h6>Resume</h6>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col">
-        <button ng-click="show3()"class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+        <button ng-click="show3()"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          <h4>ABOUT</h4>
           <i class="material-icons">filter_hdr</i>
         </button>
-        <h6>About</h6>
+
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <button ng-click="show2()"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          <h4>RESUME</h4>
+          <i class="material-icons">fingerprint</i>
+        </button>
       </div>
     </div>
   </main>
 </div>
+
 <div class="mdl-cell mdl-cell--12-col" id="hiddenContainer">
   <div ng-if="hidden1==false" id="siteContainer">
+
     <div class="demo-card-image mdl-card mdl-shadow--4dp">
       <div id="local"class="mdl-card__title mdl-card--expand">
         <img style="width:100%;height:115%;"src="../images/localsounds.png" alt="local sounds">
@@ -47,15 +54,22 @@
       </div>
     </div>
   </div>
-
   <div id="resume" ng-if="hidden2==false">
-    <embed class="text-center"src="/documents/bouchard_cv.pdf" width="800" height="1100" alt="pdf">
-
-
-      <!-- pluginspage="http://www.adobe.com/products/acrobat/readstep2.html" -->
-
+    <div id="embed">
+      <embed  class="text-center"src="/documents/bouchard_cv.pdf" width="800" height="1100" alt="pdf"pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+      </div>
     </div>
-    <div ng-if="hidden3==false">
-      Hidden
+
+    <div id="about"ng-if="hidden3==false" class="mdl-card__actions mdl-shadow--6dp mdl-cell mdl-cell--12-col">
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-cell mdl-cell--2-col">
+
+        </div>
+        <h3>About</h3>
+        <img id="me"src="../images/mateo.jpg" alt="me" class="mdl-shadow--6dp">
+      </div>
+      <p>some shit</p>
+    </div>
+    <div>
     </div>
   </div>

@@ -1,12 +1,9 @@
 (function() {
   'use strict';
 
-
   angular.module('matthew',['ngAnimate','ui.router'])
   .config(function($stateProvider, $urlRouterProvider) {
-
     $urlRouterProvider.otherwise('/');
-
     $stateProvider
     .state('home', {
       url: '/',
@@ -30,12 +27,20 @@
           $scope.hidden2 = true;
           $scope.hidden1 = true;
         }
-        $scope.hideAll = function(){
-          $scope.hidden1 = true;
-          $scope.hidden2 = true;
-          $scope.hidden3 = true;
-        }
+        // $scope.hideThings = function(){
+        //   console.log("clicked");
+        //   if($scope.hidden1 == false ){
+        //     $scope.hidden1 = true;
+        //   }
+        //   if($scope.hidden2 === false ){
+        //     $scope.hidden2 = true;
+        //   }
+        //   if($scope.hidden3 === false ){
+        //     $scope.hidden3 = true;
+        //   }
+        // }
       }
+
     });
     // $stateProvider.html5Mode(true)
   });

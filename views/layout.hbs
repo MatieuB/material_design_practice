@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="matthew">
 <head>
-  <title>{{title}}</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script
   <!-- Latest compiled and minified CSS -->
@@ -12,7 +11,8 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css" />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -29,33 +29,46 @@
     <header class="mdl-layout__header mdl-layout__header--transparent">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">Matthew Bouchard</span>
+        <span class="mdl-layout-title text-center" id="title"><h2>MATTHEW BOUCHARD <img src="/images/sugarglider.png" alt="sugar_glider"> web developer</h2></span>
         <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-layout-spacer">
+
+
+        </div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#">Home</a>
+          <!-- <a class="mdl-navigation__link" href="#">Home</a>
           <a class="mdl-navigation__link" href="#">CV</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a> -->
         </nav>
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title">nav</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Home</a>
         <a class="mdl-navigation__link" href="">CV</a>
-        <a class="mdl-navigation__link" href="">CV</a>
+        <div class="iconContainer">
+          <a href="https://github.com/MatieuB">
+            <i class="fa fa-github mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+            </a>
+          <a href="https://www.linkedin.com/in/matthewjbouchard">
+            <i class="fa fa-linkedin mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+          </a>
+          <!-- <a href="#">
+            <i class="fa fa-slack mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+          </a> -->
+          <a href="mailto:bouchard.matthewj@gmail.com">
+            <i class="fa fa-envelope mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+          </a>
+        </div>
       </nav>
     </div>
-
-
     <div class="class=mdl-cell mdl-cell--12-col">
       <ui-view class ></ui-view>
-
     </div>
 
-    
+
 
   </body>
   </html>
