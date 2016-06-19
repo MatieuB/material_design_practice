@@ -12,8 +12,10 @@ body {
 
 
 .demo-layout-transparent {
-  background-color:rgba(98, 162, 171, 0.76);
-/*rgba(124, 123, 28, 0.4)*/
+  background-color:rgba(124, 123, 28, 0.4);
+
+  /*rgba(98, 162, 171, 0.76);*/
+
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -145,7 +147,7 @@ h2{
   margin-top: 5%;
   /*margin-right: 0px;*/
   font-family: monospace;
-  font-size: 60px;
+  font-size: 50px;
 }
 .mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect {
 
