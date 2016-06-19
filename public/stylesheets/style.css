@@ -17,12 +17,14 @@ body {
   /*rgba(98, 162, 171, 0.76);*/
 
 }
+
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
   your background is light. */
 position: fixed;
   color: black;
+
 
 }
 .mdl-layout__drawer{
@@ -183,5 +185,8 @@ i.material-icons{
   padding:1%;
   margin-bottom: 20px;
 
-  height:140px;
+  height:125px;
+  background-color: rgb(159, 212, 213);
+
+  /*rgba(98, 162, 171, 0.76)*/
 }
