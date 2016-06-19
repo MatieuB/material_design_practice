@@ -1,6 +1,6 @@
 body {
   /*padding: 50px;*/
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
 
@@ -12,13 +12,14 @@ body {
 
 
 .demo-layout-transparent {
-  background-color: rgba(124, 123, 28, 0.4);
+  background-color:rgba(98, 162, 171, 0.76);
+/*rgba(124, 123, 28, 0.4)*/
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
   your background is light. */
-
+position: fixed;
   color: black;
 
 }
@@ -76,15 +77,18 @@ body {
 }
 #resume {
   margin:0 auto;
+  color:white;
+  /*width:200%;*/
 }
 #about{
   border-radius: 5%;
   margin:0 auto;
   width:80%;
+
   background-color: rgba(90, 110, 140, 0.4);
-  height: 800px;
-  overflow: scroll;
-  color:white;
+  height: 525px;
+  /*overflow: scroll;*/
+  color:rgb(149, 48, 26);//deep red
 }
 .mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect{
 
@@ -94,7 +98,7 @@ body {
 }
 #buttonContainer{
   display:flex;
-  margin-top:7%;
+  margin-top:11%;
   margin-bottom: 7%;
   /*align-content:space-around;*/
   justify-content: space-between;
@@ -105,8 +109,16 @@ main{
   position: relative;
 }
 #me{
-  width:25%;
+  margin-top:15%;
+  width:100%;
   border-radius: 3%;
+  border: 5px solid grey;
+}
+#me2{
+  margin-top: 5%;
+  width:70%;
+  border-radius: 3%;
+  /*height:20%;*/
   border: 5px solid grey;
 }
 .iconContainer{
@@ -148,7 +160,7 @@ h2{
 }
 i.material-icons{
   font-size: 60px;
-  color:rgb(149, 48, 26);
+  color:rgb(149, 48, 26);//deep red
 }
 #tree{
   width:45%;
@@ -163,4 +175,11 @@ i.material-icons{
 }
 .mdl-card__title.mdl-card--expand{
   background-color: rgb(149, 48, 26);
+}
+#header{
+  position: absolute;
+  padding:1%;
+  margin-bottom: 20px;
+
+  height:140px;
 }
