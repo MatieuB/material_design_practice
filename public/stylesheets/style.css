@@ -176,6 +176,7 @@ i.material-icons{
   background-color: rgba(255, 255, 255, 0);
   background-image:url('../images/dinosaur.jpg');
   /*background:*/
+  position:sticky;
 }
 .mdl-card__title.mdl-card--expand{
   background-color: rgb(149, 48, 26);
