@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
   <!-- Angular -->
@@ -26,71 +27,60 @@
 <body>
 
 
-    <header id="header"class="mdl-layout__header mdl-layout">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title text-center" id="title"><h2>MATTHEW BOUCHARD <img src="/images/sg2.png" alt="sugar_glider"> web-developer</h2></span>
-        <!-- <span aria-expanded="false" role="button" tabindex="0"class="mdl-layout__drawer-button mdl-js-layout" target="mdl-layout__drawer">
-          <i class="material-icons">folder</i>
-        </span> -->
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer">
+  <header id="header"class="mdl-layout__header mdl-layout">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"> web-developer</h4>
+      </span></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <!-- <div class="mdl-layout-spacer mdl-layout__header-row"></div> -->
+      <div class="navButtons mdl-grid">
+        <nav class="mdl-navigation" >
+          <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--4-col" ui-sref="about">About<i class="material-icons">filter_hdr</i></a>
 
-
-        </div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation">
-          <!-- <a class="mdl-navigation__link" href="#">Home</a>
-          <a class="mdl-navigation__link" href="#">CV</a>
-          <a class="mdl-navigation__link" href="">Link</a> -->
+          <span id="projects">
+            <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--4-col" ui-sref="projects">projects<i class="material-icons">folder</i></a>
+          </span>
+          <span id="resBtn">  <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect mdl-cell mdl-cell--4-col" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a></span>
         </nav>
       </div>
-    </header>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    </div>
+  </header>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
 
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">nav</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Home</a>
-        <a class="mdl-navigation__link" href="">CV</a>
-        <div class="iconContainer">
-          <a href="https://github.com/MatieuB">
-            <i class="fa fa-github mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/matthewjbouchard">
-            <i class="fa fa-linkedin mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/MatieuBouchard">
-          <i class="fa fa-twitter mdl-cell mdl-cell--3-col" aria-hidden="true"></i></i>
-        </a>
-        <a href="mailto:bouchard.matthewj@gmail.com">
-          <i class="fa fa-envelope mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
-        </a>
-      </div>
-    </nav>
+
+
+    <ui-view></ui-view>
+
+    <main class="mdl-layout__content">
+    </main>
+    <div>
+      <footer id="footer" class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo"><span id="footerFont">&copy 2016 Matthew Bouchard</span></div>
+          <ul class="mdl-mini-footer__link-list">
+
+          </ul>
+        </div><div class="mdl-mini-footer__right-section">
+          <div class="iconContainer text-center">
+            <a href="https://github.com/MatieuB">
+              <i class="fa fa-github mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/matthewjbouchard">
+              <i class="fa fa-linkedin mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/MatieuBouchard">
+              <i class="fa fa-twitter mdl-cell mdl-cell--3-col" aria-hidden="true"></i></i>
+            </a>
+            <a href="mailto:bouchard.matthewj@gmail.com">
+              <i class="fa fa-envelope mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </footer>
+    </div>
   </div>
-
-
-  <ui-view></ui-view>
-
-
-
-  <img id="tree" src="/images/brown-wedding-tree-hi.png" alt="tree" />
-<main class="mdl-layout__content">
-
-</main>
-  <div>
-    <footer id="footer" class="mdl-mini-footer">
-      <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo"><span id="footerFont">&copy 2016 Matthew Bouchard</span></div>
-        <ul class="mdl-mini-footer__link-list">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</div>
 
 
 
