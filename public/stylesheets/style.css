@@ -295,8 +295,8 @@ padding-left:35%;
 padding-right:0px;
 }*/
 
-/*@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .mdl-layout__drawer-button {
     display:none;
   }
-}*/
+}
