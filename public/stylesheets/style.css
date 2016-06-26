@@ -221,12 +221,12 @@ width:170%;
   width:145%;
 }
 
-.navButtons{
-  padding-left: 22%;
+.navButtons.mdl-navigation.mdl-layout--large-screen-only{
+  padding-left: 17%;
 
   display: flex;
   /*align-content: stretch;*/
-  width:150%;
+  width:160%;
 }
 #titleFont{
   text-decoration: none;
@@ -256,6 +256,7 @@ a{
   color:rgb(193, 192, 180);
   text-shadow:1px;
 }
+
 a:hover{
   color:rgb(196, 183, 68);
 }
@@ -265,3 +266,7 @@ a:hover{
 #email:hover{
   color:rgb(196, 183, 68);
 }
+/*.mdl-navigation{
+  padding-left:35%;
+  padding-right:0px;
+}*/
