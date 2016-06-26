@@ -241,6 +241,12 @@ a{
   color:rgb(193, 192, 180);
   text-shadow:1px;
 }
+a:hover{
+  color:yellow;
+}
 #email{
   color:black;
+}
+#email:hover{
+  color:yellow;
 }
