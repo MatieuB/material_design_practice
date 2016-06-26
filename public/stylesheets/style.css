@@ -52,7 +52,7 @@ h4{
 #local .demo-card-image.mdl-card {
   width: 256px;
   height: 256px;
-  background: url('../images/localsounds.png') center / cover;
+  /*background: url('../images/localsounds.png') center / cover;*/
 }
 .demo-card-image.mdl-card{
   width:55%;
@@ -61,7 +61,19 @@ h4{
 #gnosh .demo-card-image.mdl-card {
   width: 256px;
   height: 256px;
-  background: url('../images/gnosh.png') center / cover;
+  /*background: url('../images/gnosh.png') center / cover;*/
+}
+#reddit .demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  /*background: url('../images/reddit_clone.png') center / cover;*/
+  padding-left: 1%;
+  padding-right:1%;
+}
+#redPic{
+  width: 98%;
+  /*margin:1%;*/
+  padding:2%;
 }
 .demo-card-image > .mdl-card__actions {
   height: 52px;
@@ -96,7 +108,7 @@ h4{
   /*width:200%;*/
 }
 #about{
-  border-radius: 5%;
+  border-radius: 9%;
   margin:3% auto;
   width:80%;
 
@@ -124,12 +136,7 @@ main{
   display: flex;
   position: relative;
 }
-#me{
-  margin-top:15%;
-  width:100%;
-  border-radius: 3%;
-  border: 5px solid grey;
-}
+
 #me2{
   margin-top: 5%;
   width:70%;
@@ -185,7 +192,7 @@ i.material-icons{
   padding:0;
 }
 .mdl-card__title.mdl-card--expand{
-  background-color: rgb(149, 48, 26);
+  background-color: rgb(177,120,72);
 }
 #header{
   font-family: quicksand;
@@ -215,11 +222,11 @@ width:170%;
 }
 
 .navButtons{
-  padding-left: 5%;
-  padding-right: 0px;
+  padding-left: 22%;
+
   display: flex;
-  align-content: stretch;
-  width:129%;
+  /*align-content: stretch;*/
+  width:150%;
 }
 #titleFont{
   text-decoration: none;
@@ -235,18 +242,26 @@ width:170%;
   color:rgb(149, 48, 26);
 }
 #homeText{
-  margin-top:10%;
+  margin-top:5%;
+  margin-left:12%;
+}
+#me{
+  margin-top:15%;
+  margin-left: 19%;
+  width:100%;
+  border-radius: 3%;
+  border: 2px solid grey;
 }
 a{
   color:rgb(193, 192, 180);
   text-shadow:1px;
 }
 a:hover{
-  color:yellow;
+  color:rgb(196, 183, 68);
 }
 #email{
   color:black;
 }
 #email:hover{
-  color:yellow;
+  color:rgb(196, 183, 68);
 }
