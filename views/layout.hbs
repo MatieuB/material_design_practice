@@ -11,7 +11,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-red.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
@@ -27,21 +27,22 @@
 <body>
 
 
-  <header id="header"class="mdl-layout__header mdl-layout">
+  <header id="header"class=" mdl-layout">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"> web-developer</h4>
-      </span></span>
+    <a ui-sref="home">  <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"> web-developer</h4>
+      </span></span></a>
       <!-- Add spacer, to align navigation to the right -->
-      <!-- <div class="mdl-layout-spacer mdl-layout__header-row"></div> -->
+
       <div class="navButtons mdl-grid">
-        <nav class="mdl-navigation" >
-          <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--4-col" ui-sref="about">About<i class="material-icons">filter_hdr</i></a>
+        <nav class="mdl-navigation mdl-cell mdl-cell--4-col" >
+          <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="about">About<i class="material-icons">filter_hdr</i></a>
 
           <span id="projects">
             <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--4-col" ui-sref="projects">projects<i class="material-icons">folder</i></a>
           </span>
           <span id="resBtn">  <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect mdl-cell mdl-cell--4-col" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a></span>
+
         </nav>
       </div>
     </div>

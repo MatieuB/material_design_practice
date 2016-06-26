@@ -87,7 +87,7 @@ h4{
   height:800px;
   /*width:50%;
   background-color: rgba(218, 214, 227, 0.47);*/
-  margin: 0 auto;
+  margin: 2% auto;
   overflow: scroll;
 }
 #resume {
@@ -168,6 +168,7 @@ padding-bottom:9%;
   /*padding-bottom: 40px;
   margin-bottom: 20px;*/
   font-size: 20px;
+
 }
 .btnFont{
   font-family: quicksand;
@@ -177,10 +178,11 @@ i.material-icons{
   color:rgb(149, 48, 26);//deep red
 }
 #footer{
-  height:50%;
+  height:30%;
   background-color: rgb(177,120,72);
 
   position:sticky;
+  padding:0;
 }
 .mdl-card__title.mdl-card--expand{
   background-color: rgb(149, 48, 26);
@@ -200,8 +202,10 @@ i.material-icons{
 }
 .mdl-mini-footer__left-section{
   font-size:20px;
-  padding-right: 2%;
+  /*padding-right: 2%;*/
   padding-top:3%;
+  padding-left:1%;
+
 }
 #projects{
 width:170%;
@@ -216,4 +220,27 @@ width:170%;
   display: flex;
   align-content: stretch;
   width:129%;
+}
+#titleFont{
+  text-decoration: none;
+}
+#mateo{
+  width:100%;
+  border-radius: 5%;
+  margin-left:2%;
+}
+#home{
+
+  font-size: 18px;
+  color:rgb(149, 48, 26);
+}
+#homeText{
+  margin-top:10%;
+}
+a{
+  color:rgb(193, 192, 180);
+  text-shadow:1px;
+}
+#email{
+  color:black;
 }
