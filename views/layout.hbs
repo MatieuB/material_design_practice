@@ -25,52 +25,54 @@
   <script type="text/javascript" src="../javascripts/module.js"></script>
 </head>
 <body>
-<header id="header"class=" mdl-layout">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-    <a ui-sref="home">  <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"><br>web-developer</h4>
-      </span></span></a>
-      <!-- Add spacer, to align navigation to the right -->
-      <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
-       <a class="mdl-navigation__link" href="">Link</a>
-       <a class="mdl-navigation__link" href="">Link</a>
-       <a class="mdl-navigation__link" href="">Link</a>
-       <a class="mdl-navigation__link" href="">Link</a>
-     </nav>
-   </div>
- </header>
- <div class="mdl-layout__drawer">
-   <span class="mdl-layout-title">Title</span>
-   <nav class="mdl-navigation">
-     <a class="mdl-navigation__link" href="">Link</a>
-     <a class="mdl-navigation__link" href="">Link</a>
-     <a class="mdl-navigation__link" href="">Link</a>
-     <a class="mdl-navigation__link" href="">Link</a>
-   </nav> -->
-    <div class="navButtons mdl-navigation mdl-layout--large-screen-only">
-        <nav class="mdl-navigation mdl-cell mdl-cell--4-col" >
-          <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header id="header" class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><a ui-sref="home">  <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"><br>web-developer</h4>
+        </span></span></a></span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
 
-          <span id="projects">
-            <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--4-col" ui-sref="projects">projects<i class="material-icons">folder</i></a>
-          </span>
-          <span id="resBtn">  <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect mdl-cell mdl-cell--4-col" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a></span>
+        <div class="navButtons">
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
 
-        </nav>
+            <!-- <span id="projects"> -->
+            <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
+            <!-- </span> -->
+            <!-- <span id="resBtn">   -->
+            <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
+            <!-- </span> -->
+
+
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
-  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
 
-    <!-- <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
-      </div> -->
+    </header>
+    <div class="mdl-layout__drawer">
+      <!-- <span class="mdl-layout-title">Title</span> -->
+      <span class="mdl-layout-title"><a ui-sref="home">  <span id="titleFont"><span id="title"><p style="font-family:quicksand;font-size:16px;">MATTHEW BOUCHARD <br>web-developer <br>
+        <img class="text-center"style="width:9%"src="/images/sg2.png" alt="sugar_glider">
+        </p>
+      </span></span></a></span>
+      <nav class="mdl-navigation">
+        <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
+
+        <!-- <span id="projects"> -->
+        <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
+        <!-- </span> -->
+        <!-- <span id="resBtn">   -->
+        <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
+        <!-- </span> -->
+
+
+      </nav>
+    </div>
+  </div>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
 
     <ui-view></ui-view>
 
