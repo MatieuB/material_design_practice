@@ -54,25 +54,29 @@
 
     </header>
     <div class="mdl-layout__drawer">
-      <!-- <span class="mdl-layout-title">Title</span> -->
-      <br><br>
-      <span class="mdl-layout-title"><a ui-sref="home">  <span id="titleFont"><span id="title"><p style="font-family:quicksand;font-size:16px;">MATTHEW BOUCHARD <br>web-developer<img class="text-center"style="width:11%"src="/images/sg2.png" alt="sugar_glider"> <br>
+    <br><br>
+      <span class="mdl-layout-title">
+        <a ui-sref="home"
+        <span id="drawerTitle">
+          <span id="title">
+            <p style="font-family:quicksand;font-size:26px;">MATTHEW BOUCHARD <br><span style="font-size:20px;">web-developer</span><img class="text-center"style="width:11%"src="/images/sg2.png" alt="sugar_glider">
+            </p><br>
+          </span>
+        </span>
+        </a>
+      </span>
 
-        </p>
-      </span></span></a></span>
-      <nav class="mdl-navigation">
-        <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
+    <nav class="mdl-navigation ">
+      <a class="drawerBtns mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
 
-        <!-- <span id="projects"> -->
-        <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
-        <!-- </span> -->
-        <!-- <span id="resBtn">   -->
-        <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
-        <!-- </span> -->
-
-
-      </nav>
-    </div>
+      <!-- <span id="projects"> -->
+      <a class="drawerBtns mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
+      <!-- </span> -->
+      <!-- <span id="resBtn">   -->
+      <a class="drawerBtns mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
+      <!-- </span> -->
+    </nav>
+  </div>
   <!-- </div> -->
   <div class="demo-layout-transparent mdl-layout mdl-js-layout">
 
@@ -107,11 +111,5 @@
       </footer>
     </div>
   </div>
-
-
-
 </body>
-
-
-
 </html>

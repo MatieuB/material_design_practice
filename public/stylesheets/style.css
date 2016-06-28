@@ -208,6 +208,7 @@ i.material-icons{
   font-family: quicksand;
   padding-top:2%;
   padding-left:0%;
+  padding-bottom:1%;
   margin-left: 0px;
 
   background-color: rgb(177,120,72); //burnt orange
@@ -295,7 +296,9 @@ a:hover{
 padding-left:35%;
 padding-right:0px;
 }*/
-
+.mdl-layout__drawer-button{
+  width:50px;
+}
 @media screen and (min-width: 1024px) {
   .mdl-layout__drawer-button {
     display:none;
@@ -314,3 +317,10 @@ padding-right:0px;
 .demo-card-image:hover {
     transform: scale(1.05);
     transition: 1s ease;
+}
+.drawerBtns{
+  font-size:22px;
+}
+#drawerTitle{
+  font-size:34px;
+}
