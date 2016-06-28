@@ -209,7 +209,7 @@ i.material-icons{
   padding-left:0%;
   margin-left: 0px;
 
-  background-color: rgb(177,120,72);
+  background-color: rgb(177,120,72); //burnt orange
   height:125px;
   color:rgb(195, 187, 188);
 }
@@ -299,4 +299,8 @@ padding-right:0px;
   .mdl-layout__drawer-button {
     display:none;
   }
+}
+.projectLink{
+  color:rgb(177,120,72);
+  text-decoration: none;
 }
