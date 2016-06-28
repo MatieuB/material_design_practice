@@ -167,6 +167,7 @@ main{
 }
 #titleFont{
   font-size: 100px;
+  text-decoration:none;
 }
 /*h2{
 margin-top: 5%;
@@ -304,3 +305,12 @@ padding-right:0px;
   color:rgb(177,120,72);
   text-decoration: none;
 }
+.demo-card-image__filename{
+  font-size:20px;
+}
+.demo-card-image {
+    transition: .25s ease;
+}
+.demo-card-image:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
