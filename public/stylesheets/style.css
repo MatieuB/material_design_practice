@@ -310,6 +310,7 @@ padding-right:0px;
 }
 .demo-card-image__filename{
   font-size:20px;
+  overflow: scroll;
 }
 .demo-card-image {
     transition: .25s ease;
