@@ -2,7 +2,7 @@
     <header id="header" class="mdl-layout__header mdl-layout--fixed-header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title"><a ui-sref="home">  <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <br>web-developer  <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"></h4>
+            <span class="mdl-layout-title"><a  ui-sref="home">  <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <br>web-developer  <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"></h4>
       </span></span>
             </a>
             </span>
@@ -10,15 +10,16 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
 
-            <div class="navButtons">
+            <div  class="navButtons">
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
+                    <a ui-sref-active="active" class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
 
                     <!-- <span id="projects"> -->
-                    <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
+                    <a ui-sref-active="active"
+                    class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
                     <!-- </span> -->
                     <!-- <span id="resBtn">   -->
-                    <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
+                    <a ui-sref-active="active" class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
                     <!-- </span> -->
 
 
